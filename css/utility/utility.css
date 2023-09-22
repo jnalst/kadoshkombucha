@@ -1,0 +1,19 @@
+.container {
+  box-sizing: border-box;
+  max-width: 1200px;
+  padding-inline: 2rem;
+  margin-inline: auto;
+}
+
+.botao {
+  padding-block: 1rem;
+  padding-inline: 1.5rem;
+  border-radius: 0.4rem;
+  border: none;
+  text-transform: uppercase;
+  font-family: "Roboto";
+  background-color: var(--colorP2);
+  color: white;
+  margin-top: 1rem;
+  transition: all 0.3s;
+}

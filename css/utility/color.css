@@ -1,0 +1,28 @@
+:root{
+  /* color */
+  --colorP1: #FF8BB3;
+  --colorP2: #ffdef1;
+  --colorP3: #FF8BB3;
+  --colorT1: #262323;
+  --colorT2: #330C1A;
+}
+
+.colorP1{
+  color: #FF8BB3;
+}
+
+.colorP2{
+  color: #330C1A;
+}
+
+.colorP3{
+  color: #FFEF99;
+}
+
+.colorT1{
+  color: #262323;
+}
+
+.colorT2{
+  color:#FEF5DA;
+}

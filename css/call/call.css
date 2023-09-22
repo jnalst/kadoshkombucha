@@ -1,0 +1,88 @@
+.chamada-bg {
+  background-color: var(--colorP1);
+  border-image: linear-gradient(64deg, rgba(14, 14, 14, 0.20) 0%, #330C1A 47.64%, rgba(14, 14, 14, 0.20) 93.23%);
+  border-bottom: 1px solid transparent;
+  border-image-slice: 1;
+}
+
+.chamada {
+  display: grid;
+  place-items: center;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.chamada h4 {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 3.2rem;
+  text-align: center;
+  color: var(--colorT2);
+  padding-bottom: 3rem;
+}
+
+.chamada-ebook {
+  display: grid;
+  grid-template-columns: .8fr 1fr;
+  padding: 1rem;
+  border-radius: 2rem;
+}
+
+.chamada-ebook picture {
+  width: 20rem;
+  justify-self: center;
+}
+
+.chamada-ebook picture img {
+  border-radius: 1rem;
+}
+
+.chamada-ebook .chamada-ebook-texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.chamada-ebook p {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 2.4rem;
+  color: white;
+  max-width: 25ch;
+  align-self: center;
+}
+
+
+.chamada-ebook .chamada-ebook-texto a  {
+  border-radius: 0.4rem;
+  border: none;
+  text-transform: uppercase;
+  font-family: "Roboto";
+  background-color: var(--colorP2);
+  color: var(--colorT2);
+  margin-top: 1rem;
+  transition: all 0.3s;
+  padding-inline: 6rem;
+  padding-block: 1rem;
+  font-size: 1.4rem;
+  width: max-content;
+}
+
+.chamada a:hover {
+  background-color: #661e37;
+  cursor: pointer;
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+
+  .chamada-ebook {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .chamada-ebook .chamada-ebook-texto a {
+    align-self: center;
+  }
+
+}

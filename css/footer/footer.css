@@ -1,0 +1,56 @@
+.footer-bg {
+  background-color: var(--colorP1);
+}
+
+.footer-redes {
+  display: flex;
+  justify-content: space-between;
+  padding-block: 1.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-redes .redes-sociais {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+.footer-redes .redes-sociais .wpp a img {
+  width: 6rem;
+  height: 6rem;
+}
+
+.footer-redes .direitos p {
+  display: flex;
+  align-items: baseline;
+  justify-items: center;
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 2rem;
+  color: white;
+  flex-wrap: wrap;
+}
+
+.footer-redes .direitos span {
+  padding-inline: 0.5rem;
+}
+
+@media screen and (max-width: 750px) {
+  .footer-redes {
+    gap: 2rem;
+    place-content: center;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .footer-redes .direitos p{
+    font-size: 1.2rem;
+  }
+
+  .footer-redes .direitos span img {
+    width: 1.2rem;
+    padding-inline: -1rem;
+  }
+
+}

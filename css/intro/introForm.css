@@ -1,0 +1,149 @@
+.intro-bg {
+  background-color: var(--colorP1);
+  border-image: linear-gradient(64deg, rgba(14, 14, 14, 0.20) 0%, #330C1A 47.64%, rgba(14, 14, 14, 0.20) 93.23%);
+  border-bottom: 1px solid transparent;
+  border-image-slice: 1;
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  padding-top: 5rem;
+  padding-bottom: 6rem;
+  gap: 20rem;
+
+}
+
+.introTextForm {
+  display: grid;
+  justify-items: start;
+  gap: 3rem;
+}
+
+.introText {
+  align-self: end;
+}
+
+.introImg{
+display: grid;
+place-self: center;
+width: 53.5rem;
+box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+border-radius: 2rem;
+}
+
+.introImg img {
+  border-radius: 2rem;
+}
+
+.introText h2 {
+  font-family: "Poppins";
+  font-size: 3.6rem;
+  color: var(--colorT2);
+  text-transform: uppercase;
+  padding-bottom: 0.6rem;
+}
+
+.introText p {
+  font-family: "Poppins";
+  font-size: 1.4rem;
+  color: var(--colorT1);
+}
+
+.introForm h2 {
+  font-family: "Poppins";
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+  padding-bottom: 1.2rem;
+}
+
+::placeholder {
+  color: #330c1a;
+}
+
+.introForm input {
+  max-width: 25.4rem;
+  padding-right: 10rem;
+  padding-left: 1.3rem;
+  padding-block: 1.2rem;
+  margin-bottom: 1rem;
+  font-family: "Roboto";
+  font-size: 1.2rem;
+  background-color: #ffe1e9;
+  border: #ff8cb4;
+  border-radius: 0.2rem;
+}
+
+.introForm button {
+  padding-block: 1rem;
+  padding-inline: 1.5rem;
+  border-radius: 0.4rem;
+  border: none;
+  text-transform: uppercase;
+  font-family: "Roboto";
+  background-color: var(--colorP2);
+  color: var(--colorT2);
+  margin-top: 1rem;
+  transition: all 0.3s;
+  width: max-content;
+}
+
+.introForm button:hover {
+  background-color: #661e37;
+  cursor: pointer;
+  color: white;
+}
+
+.arrow{
+  display: grid;
+  place-items: center;
+}
+
+.arrow-button{
+  background-color: var(--colorP3);
+  padding-block: .6rem;
+  padding-inline: 2.3rem;
+  border-radius: 10rem;
+  margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .intro {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    padding-bottom: 3rem;
+  }
+
+  .introTextForm {
+    display: grid;
+    justify-items: center;
+  }
+
+  .introText h2,
+  p {
+    text-align: center;
+  }
+  .introFormF {
+    display: grid;
+    place-items: center;
+  }
+
+  .introForm h2 {
+    text-align: center;
+  }
+
+  .introImg{
+    place-self: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .introImg{
+    display: grid;
+    place-self: center;
+    width: 33.5rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    border-radius: 2rem;
+    }
+}

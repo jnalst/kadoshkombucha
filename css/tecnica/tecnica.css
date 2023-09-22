@@ -1,0 +1,143 @@
+.tecnica-bg {
+  background-color: var(--colorP1);
+  padding-top: 6rem;
+  padding-bottom: 3rem;
+  border-image: linear-gradient(
+    64deg,
+    rgba(14, 14, 14, 0.2) 0%,
+    #330c1a 47.64%,
+    rgba(14, 14, 14, 0.2) 93.23%
+  );
+  border-bottom: 1px solid transparent;
+  border-image-slice: 1;
+}
+
+.tecnica {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.tecnica picture {
+  display: grid;
+  place-items: end;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  border-radius: 2rem 0rem 0rem 2rem;
+}
+
+.tecnica picture img {
+  border-radius: 2rem 0rem 0rem 2rem;
+  width: 100rem;
+}
+
+.tecnica-text {
+  background-color: var(--colorP2);
+  border-radius: 0rem 2rem 2rem 0rem;
+  margin-left: -0.3rem;
+  background-image: linear-gradient(to right, #ffef99 2.5%, #ffdef1 0);
+  display: grid;
+  place-items: start;
+  padding-block: 3rem;
+  padding-right: 3rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+
+.tecnica-text .box-text {
+  padding-left: 2.5rem;
+  display: grid;
+  grid-template-areas:
+    "number title"
+    "number paragraph";
+}
+
+.box-text h5 {
+  color: var(--colorT2);
+  font-family: "inter";
+  font-size: 2.8rem;
+  grid-area: number;
+  letter-spacing: 3.52px;
+  margin-block: 2rem;
+  margin-right: 1rem;
+}
+
+.box-text h6 {
+  color: var(--colorT2);
+  font-family: "inter";
+  font-size: 1.8rem;
+  font-weight: 700;
+  grid-area: title;
+  margin-block: 1rem;
+}
+
+.box-text p {
+  color: var(--colorT2);
+  font-family: "inter";
+  font-size: 1.4rem;
+  font-weight: 400;
+  grid-area: paragraph;
+  max-width: 50ch;
+  padding-bottom: 1rem;
+  text-align: start;
+}
+
+.botao3 {
+  display: grid;
+  place-items: center;
+  padding-top: 6rem;
+  padding-bottom: 3rem;
+}
+
+.botao3 a {
+  border-radius: 0.4rem;
+  border: none;
+  text-transform: uppercase;
+  font-family: "Roboto";
+  background-color: var(--colorP2);
+  color: var(--colorT2);
+  margin-top: 1rem;
+  transition: all 0.3s;
+  padding-inline: 6rem;
+  padding-block: 1rem;
+  font-size: 1.4rem;
+  width: max-content;
+}
+
+.botao3 a:hover {
+  background-color: #661e37;
+  cursor: pointer;
+  color: white;
+}
+
+@media screen and (max-width: 1050px) {
+  .box-text h5 {
+    padding-left: 3rem;
+  }
+
+  .tecnica {
+    grid-template-columns: 1fr;
+    margin-inline: 6rem;
+  }
+
+  .tecnica picture img {
+    display: none;
+  }
+
+  .box-text p {
+    max-width: 90ch;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .box-text h5 {
+    padding-left: 1rem;
+  }
+
+  .tecnica {
+    grid-template-columns: 1fr;
+    margin-inline: 0rem;
+  }
+
+  .tecnica-text .box-text {
+    padding-left: 2rem;
+  }
+}
