@@ -2,7 +2,7 @@ function wpp() {
   var nome = document.getElementById("nome").value;
   var telefone = document.getElementById("telefone").value;
   var email = document.getElementById("email").value;
-  var url = "https://wa.me/55393803454728?text=" 
+  var url = "https://wa.me/393803454728?text=" 
     + "*Bem vindo a nossa comunidade Kadosh Living Foods para atualizações entre em nosso grupo abaixo:*" + "%0a" // Mensagem personalizada
     + "%0a" // Quebra de linha
     + "Link: https://chat.whatsapp.com/D7vALkUKtoI8yLhBVjxERs" + "%0a"
